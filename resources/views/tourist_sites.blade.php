@@ -3,7 +3,7 @@
     <section>
         <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
             <header class="py-4">
-                    
+
                 <h2 class="font-bold text-gray-900 sm:text-4xl">
                     Lugares turisticos de la region
                 </h2>
@@ -16,6 +16,10 @@
                             class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 rounded-xl" />
 
                         <div class="relative p-4 sm:p-6 lg:p-8">
+                            <p class="text-sm font-medium uppercase tracking-widest text-pink-500">
+                                {{ $lugar_turistico->region->nombre }}
+                            </p>
+
                             <p class="text-xl font-bold text-white sm:text-2xl">{{ $lugar_turistico->nombre }}</p>
 
                             <div class="mt-32 sm:mt-48 lg:mt-64">

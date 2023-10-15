@@ -8,11 +8,12 @@
                     Regiones del peru
                 </h2>
 
-                <p class="mt-4 max-w-md text-gray-500">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-                    praesentium cumque iure dicta incidunt est ipsam, officia dolor fugit
-                    natus?
+                <p class="mt-4 max-w-2xl text-gray-500">
+                    Explora Perú a través de sus diversas regiones. Descubre las maravillas de la costa, sierra y selva en
+                    un solo lugar. Encuentra información sobre lugares turísticos, consejos de viaje y experiencias únicas.
+                    Tu ventana a la diversidad de Perú. ¡Comienza tu aventura ahora!
                 </p>
+
             </header>
 
             <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

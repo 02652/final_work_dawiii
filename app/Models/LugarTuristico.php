@@ -23,4 +23,9 @@ class LugarTuristico extends Model
         return $this->belongsTo(Region::class, 'region_id');
     }
 
+    public function ofertasTurisicas()
+    {
+        return $this->hasMany(OfertaTuristica::class, 'lugar_turistico_id');
+    }
+
 }

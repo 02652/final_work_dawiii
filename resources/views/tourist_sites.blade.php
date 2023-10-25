@@ -5,14 +5,19 @@
             <header class="py-4">
 
                 <h2 class="font-bold text-gray-900 sm:text-4xl">
-                    Lugares turisticos de la region
+                    Todos los lugares turisticos del Perú
                 </h2>
+                <p class="mt-4 max-w-2xl text-gray-500">
+                    City Tours: Tu guía en línea para descubrir los tesoros turísticos de este país lleno de maravillas
+                    naturales y culturales. Encuentra información esencial sobre los destinos, consejos de viaje y mucha
+                    inspiración para tu próximo viaje a Perú
+                </p>
             </header>
 
             <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 @foreach ($lugares_turisticos as $lugar_turistico)
-                    <a href="#" class="group relative block bg-black rounded-xl">
-                        <img alt="{{ $lugar_turistico->nombre }}" src="images/tourist_sites/{{ $lugar_turistico->imagen }}"
+                    <a href="{{ route('site', $lugar_turistico->id) }}" class="group relative block bg-black rounded-xl">
+                        <img alt="{{ $lugar_turistico->nombre }}" src="/images/tourist_sites/{{ $lugar_turistico->imagen }}"
                             class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50 rounded-xl" />
 
                         <div class="relative p-4 sm:p-6 lg:p-8">

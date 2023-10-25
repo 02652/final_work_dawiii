@@ -4,18 +4,19 @@
         <header class="py-4">
 
             <h2 class="font-bold text-gray-900 sm:text-4xl">
-                Actividades
+                Todas las actividades
             </h2>
+            <p class="mt-4 max-w-2xl text-gray-500">
+                Explora Perú de la manera que más te guste. Descubre una variedad de emocionantes actividades en nuestros
+                destinos turísticos, desde caminatas hasta degustaciones culinarias y aventuras en la selva. ¡Vive
+                experiencias únicas en Perú!
+            </p>
         </header>
-        <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             @foreach ($ofertas_turisticas as $oferta)
-                <a class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md group">
-                    @php
-                        $images = explode(';', $oferta->imagenes);
-                        $firstImage = reset($images);
-                    @endphp
+                <a href="{{ route('offer', $oferta->id) }}" class="relative flex w-full flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md group">
                     <div class="relative mx-4 mt-4 h-96 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
-                        <img src="images/tourist_offers/{{ $firstImage }}" alt=""
+                        <img src="images/tourist_offers/{{ $oferta->imagen_principal }}" alt=""
                             class="h-full w-full object-cover transition duration-500 group-hover:scale-105 sm:h-75" />
                     </div>
                     <div class="p-6">
